@@ -1,0 +1,18 @@
+﻿@model TheComicsTestMVC.Models.Story
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Title</h1>
+    <p>@Model.Description</p>
+</div>
+<div class="text-center">
+    @foreach (var item in @Model.Characters)
+    {
+        <img src="@item.ImageURL">
+        @item.Name
+        <br />
+    }
+</div>
