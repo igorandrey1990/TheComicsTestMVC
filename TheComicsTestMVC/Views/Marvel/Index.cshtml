@@ -8,14 +8,12 @@
     <h1 class="display-4">@Model.Title</h1>
     <p>@Model.Description</p>
 </div>
-<div class="text-center">
-    @foreach (var item in @Model.Characters)
+    @foreach (var character in @Model.Characters)
     {
-        <img src="@item.ImageURL">
-        @item.Name
-        <br />
+        <ul>
+            <li><img src="@character.ImageURL" > <b>Character Name</b>: @character.Name</li>
+        </ul>
     }
-</div>
 <div class="text-center">
     <br />
     <br />

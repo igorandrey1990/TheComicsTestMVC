@@ -15,7 +15,7 @@ namespace TheComicsTestMVC.Helpers
             {
                 Character character = new Character();
                 character.Name = item.name;
-                character.ImageURL = item.thumbnail.path;
+                character.ImageURL = item.thumbnail.path + "/portrait_small.jpg";
                 characterList.Add(character);
             }
 
